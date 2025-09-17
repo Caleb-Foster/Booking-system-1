@@ -1,0 +1,87 @@
+body {
+    min-height: 100vh;
+    background: #6f97c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    background: #fff;
+    padding: 32px 28px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.15);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+label {
+    font-weight: 500;
+    color: #2d3e50;
+    margin-bottom: 6px;
+}
+
+input[type="text"], select {
+    padding: 10px 12px;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f7fafd;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, select:focus {
+    border: 1.5px solid #6f97c4;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #ff5869;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #e04a5a;
+}
+
+a {
+    color: #6f97c4;
+    text-decoration: none;
+    font-size: 0.98rem;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ff5869;
+}
+
+/* Add at the end of both CSS files */
+@media (max-width: 600px) {
+  form, .calendar {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 10px;
+  }
+}
