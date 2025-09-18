@@ -1,15 +1,20 @@
 {
   "name": "booking-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "A simple booking system with calendar interface",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["booking", "calendar", "appointment"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "express": "^5.1.0"
   }
