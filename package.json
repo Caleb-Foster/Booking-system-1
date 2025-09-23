@@ -1,16 +1,27 @@
 {
   "name": "booking-system",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+=======
+  "description": "A simple booking system with calendar interface",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+>>>>>>> a11c36a7527d7bce4871b7ba0a540824f53e9ae7
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["booking", "calendar", "appointment"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "better-sqlite3": "^12.2.0",
     "express": "^5.1.0"
