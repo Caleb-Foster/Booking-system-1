@@ -63,39 +63,35 @@ header button {
     font-weight: 500;
 }
 
-.dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    padding: 10px;
+
+.calendar .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
 }
 
-.date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: auto;
-    cursor: pointer;
-    font-size: 600;
-    width: 40px;
-    height: 40px;
-    transition: 0.2s;
+.date-cell {
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
 }
 
-.date:hover,
-.date.active {
-    background: #ff5869;
-    color: #fff;
+.date-cell:hover {
+  background: #f0f0f0;
 }
 
-.date.inactive {
-    color: #999FA6;
-    cursor: default;
+.date-cell.selected {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
 }
 
-.date.inactive:hover {
-    color: #fff;
+.date-cell.fully-booked {
+  background: #eee;
+  color: #999;
+  cursor: not-allowed;
 }
 
 /* Add at the end of both CSS files */

@@ -7,7 +7,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-form {
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+form, .calendar {
     background: #fff;
     padding: 32px 28px;
     border-radius: 10px;
@@ -15,7 +24,12 @@ form {
     width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.calendar {
+    height: 90% !important;
 }
 
 h1 {

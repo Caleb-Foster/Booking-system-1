@@ -1,55 +1,49 @@
+<!-- filepath: /Users/calebfoster/Desktop/Booking-system/public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Booking Form</title>
-    <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="container">
     <form>
-        <h1>Booking Form</h1>
-        <label for="fullname">First and Last Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
+      <h1>Booking Form</h1>
+      <label for="fullname">First and Last Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
 
-        <label for="time">Time for visit:</label>
-        <select id="time" name="time" required>
-            <option value="">Select a time</option>
-            <option value="8am-9am">8am-9am</option>
-            <option value="9am-10am">9am-10am</option>
-            <option value="4pm-5pm">4pm-5pm</option>
-            <option value="5pm-6pm">5pm-6pm</option>
-            <option value="6pm-7pm">6pm-7pm</option>
-        </select>
-
-        <!-- Calendar embedded below -->
-        <div class="calendar">
-            <h1>Select a date</h1>
-            <div class="header">
-                <button id="prevBtn" type="button">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="monthYear" id="monthYear"></div>
-                <button id="nextBtn" type="button">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-            <div class="days">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="dates" id="dates"></div>
-        </div>
-        <!-- End calendar -->
-        <br>
-        <button type="submit">Submit</button>
+      <label for="time">Time for visit:</label>
+      <select id="time" name="time" required>
+        <option value="">Select a time</option>
+        <option value="8am-9am">8am-9am</option>
+        <option value="9am-10am">9am-10am</option>
+        <option value="4pm-5pm">4pm-5pm</option>
+        <option value="5pm-6pm">5pm-6pm</option>
+        <option value="6pm-7pm">6pm-7pm</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
     </form>
-    <script src="main.js"></script>
+
+  <!-- Calendar OUTSIDE the form -->
+    <div class="calendar">
+      <h1>Select a date</h1>
+      <div class="header">
+        <button id="prevBtn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="monthYear" id="monthYear"></div>
+        <button id="nextBtn" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="days">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div>
+        <div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+      <div class="dates" id="dates"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
