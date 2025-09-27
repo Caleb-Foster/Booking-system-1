@@ -3,7 +3,6 @@ const path = require('path');
 const Database = require('better-sqlite3');
 
 const app = express();
-<<<<<<< HEAD
 const PORT = 3001;
 const startedAt = new Date().toISOString();
 
@@ -17,9 +16,6 @@ db.prepare(`
     time TEXT NOT NULL
   )
 `).run();
-=======
-const PORT = process.env.PORT || 3001;
->>>>>>> a11c36a7527d7bce4871b7ba0a540824f53e9ae7
 
 app.use(express.json());
 
@@ -84,12 +80,8 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-<<<<<<< HEAD
-  console.log(`Server (pid ${process.pid}) running at http://localhost:${PORT} since ${startedAt}`);
-=======
     console.log(`Server running on port ${PORT}`);
     if (process.env.NODE_ENV !== 'production') {
         console.log(`Local development: http://localhost:${PORT}`);
     }
->>>>>>> a11c36a7527d7bce4871b7ba0a540824f53e9ae7
 });
